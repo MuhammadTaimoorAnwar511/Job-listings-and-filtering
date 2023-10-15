@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="top-div">
+        <!-- Your top-div content here -->
+    </div>
+
+    <div id="center-div">
+        <!-- Content for the new div here -->
+
+        <div id="search-div">
+            <input type="text" id="search-input" placeholder="">
+            <button id="clear-button">Clear</button>
+        </div>
+
+    </div>
+
+    <div id="job-list">
+        <!-- Job listings will be added here dynamically -->
+    </div>
+    <div id="add-button">
+        <button id="add-button">+</button>
+    </div>
+    
+    <div id="popup-overlay">
+        <div id="popup-content">
+            <!-- Content for the popup window -->
+            <h2>Add a New Job</h2>
+            <form id="new-job-form">
+                New Job <input type="checkbox" id="new-job-new"> 
+                Featured Job<input type="checkbox" id="new-job-featured"> 
+                <input type="text" id="new-job-logo" placeholder="logo path">
+                <input type="text" id="new-job-company" placeholder="Company">
+                <input type="text" id="new-job-position" placeholder="Position">
+                <input type="text" id="new-job-role" placeholder="Role">
+                <input type="text" id="new-job-level" placeholder="Level">
+                <input type="text" id="new-job-contract" placeholder="Contract Type">
+                <input type="text" id="new-job-location" placeholder="Location">
+                <input type="text" id="new-job-languages" placeholder="Languages (comma-separated)">
+                <input type="text" id="new-job-tools" placeholder="tools (comma-separated)">
+                <!-- Add more input fields as needed -->
+                <button id="submit-new-job">Add Job</button>
+                <button id="close-popup">Close</button>
+            
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

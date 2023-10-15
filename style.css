@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    src: url('path/to/league-spartan-500.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    src: url('path/to/league-spartan-700.woff2') format('woff2');
+  }
+
+  
+body 
+{
+    background-color: hsl(180, 52%, 96%);
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#add-button 
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: hsl(180, 29%, 50%);
+    color: #FFFFFF;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#add-button:hover 
+{
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+
+
+
+#center-div 
+{
+    background-color: hsl(180, 31%, 95%);
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    height: 26px;
+    margin-bottom: 20px;
+    width: 43%;
+    margin: 20px auto;
+    border: solid white 1px;
+}
+#clear-button 
+{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    color: hsl(180, 29%, 50%);
+    border: #FFFFFF;
+}
+#clear-button:hover 
+{
+    color:  hsl(180, 29%, 50%);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.colored-box 
+{
+    background-color: hsl(180, 52%, 96%);
+    font-weight: bold;
+    color: hsl(180, 29%, 50%);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.company-name 
+{
+    text-align: left;
+    font-size: 14px;
+    color: hsl(180, 29%, 50%);
+    margin: 10px;
+}
+.column.posted-at,
+.column.contract,
+.column.location 
+{
+    font-weight: lighter;
+    font-size: 10px;
+    color: grey;
+}
+.contract-2 
+{
+    font-weight: lighter;
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+}
+
+
+
+.delete-button 
+{
+    margin-left: 5px;
+}
+
+
+.featured-box 
+{
+    background-color: black;
+    color: white;
+}
+
+
+.job-div 
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 4fr;
+    gap: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 100px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+}
+.job-div .row-3 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.job-div .row-3 .column 
+{
+    margin: 10px;
+    text-align: left;
+}
+.job-div img 
+{
+    max-width: 100%;
+    max-height: 100px;
+    display: block;
+    margin: 10px auto;
+    align-self: center;
+}
+#job-list .delete-button 
+{
+    background-color: red;
+    color: black;
+}
+.job-column 
+{
+    text-align: left;
+}
+.job-column-3 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.languages-tools 
+{
+    display: flex;
+}
+.location-2 
+{
+    font-weight: lighter;
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+}
+
+
+#new-job-form input 
+{
+    width: 90%; 
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+#popup-overlay 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 400px;
+    width: 50%; 
+    height: 100vh; 
+    align-items: center;
+    justify-content: center;
+   
+}
+#popup-content 
+{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%; 
+}
+.position 
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+.posted-at, .contract, .location 
+{
+    font-weight: lighter;
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+}
+.position-2 
+{
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+.posted-at-2 
+{
+    font-weight: lighter;
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+}
+
+
+.row.company-name 
+{
+    font-size: 12px;
+    color: hsl(180, 29%, 50%);
+}
+.row.position 
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+.row-3 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#search-input 
+{
+    width: 500px;
+    height: 30px;
+    border: #FFFFFF;
+}
+.small-box 
+{
+    font-size: 10px;
+    padding: 3px 5px;
+}
+.small-box:hover 
+{
+    background-color: hsl(180, 29%, 50%);
+    color: #FFFFFF;
+}
+.small-box.new-box:hover
+{
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+.small-box.featured-box:hover 
+{
+    background-color: black;
+    color: white;
+}
+#submit-new-job, #close-popup 
+{
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: hsl(180, 29%, 50%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+#submit-new-job:hover, #close-popup:hover 
+{
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+.small-box 
+{
+    font-size: 12px;
+}
+
+
+#top-div 
+{
+    background-color: hsl(180, 29%, 50%);
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    position: relative; 
+}
+
+/* Add a media query for mobile devices */
+@media screen and (max-width: 375px) 
+{
+
+#top-div 
+{
+    background-color: hsl(180, 29%, 50%);
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: relative; 
+}
+
+    #center-div 
+    {
+        background-color: White;
+        color: #FFFFFF;
+        padding: 10px;
+        text-align: center;
+        height: 26px;
+        margin-bottom: 20px;
+        width: 90%;
+        margin: 20px auto;
+        border: solid black 1px;
+    }
+    #search-input 
+    {
+        width: 80%;
+        height: 30px;
+        border: solid white 1px;
+    }
+    .job-div 
+    {
+        display: flex; /* Change to flex layout */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Align elements vertically in the center */
+        text-align: left;
+        height: auto; /* Remove fixed height */
+        width: 85%; /* Expand to full width */
+        margin: 20px; /* Remove margin */
+        padding: 10px;
+    }
+    .company-name 
+    {
+    text-align: left;
+    font-size: 14px;
+    color: hsl(180, 29%, 50%);
+    margin: 10px;
+    }
+    .job-div .row-3 
+    {
+        display: flex; /* Use flex layout for the row-3 */
+        flex-direction: row; /* Stack elements vertically */
+       
+        border-bottom: solid black 1px;
+        
+    }
+
+    .job-div .row-3 .column 
+    {
+        text-align: left;
+        margin: 15px ;
+    }
+
+    .job-div img 
+    {
+        max-width: 100%;
+        max-height: 100px;
+        display: block;
+        margin: 0 ;
+    }
+    #job-list .delete-button 
+    {
+    background-color: red;
+    color: black;
+    text-align: left;
+    }
+    .job-column 
+    {
+    text-align: left;
+    }
+    .job-column-3 
+    {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    }
+
+
+    #popup-overlay 
+    {
+    display: none;
+    position: fixed;
+    left: 40px;
+    width: 70%; 
+    
+    align-items: center;
+    justify-content: center;
+    }
+    #popup-content 
+    {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%; 
+    }
+
+/*taimoor*/
+}
